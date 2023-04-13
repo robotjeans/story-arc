@@ -8,7 +8,7 @@
     @apply h-full w-full;
   }
   body {
-    @apply bg-sa-black text-sa-white;
+    @apply text-sa-white;
   }
 }
 

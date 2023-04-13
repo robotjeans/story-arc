@@ -1,3 +1,4 @@
+import Header from "../components/ui/Header";
 import "../styles/globals.css";
 
 const RootLayout = ({
@@ -9,7 +10,13 @@ const RootLayout = ({
 }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header title="Generic Movie" />
+
+        <section className="bg-sa-black">
+          <div className="max-w-3xl mx-auto">{children}</div>
+        </section>
+      </body>
     </html>
   );
 };
