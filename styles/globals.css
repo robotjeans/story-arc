@@ -4,11 +4,26 @@
 
 @layer base {
   html,
+  body,
+  #__next,
+  #container {
+    height: 100%;
+    padding: 0.1px;
+    margin: 0;
+    user-select: none;
+    cursor: default;
+  }
+  html,
   body {
-    @apply h-full w-full;
+    @apply w-full text-black;
+  }
+  html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
   }
   body {
-    @apply text-sa-white;
+    @apply overflow-hidden bg-gray-100;
   }
 }
 
